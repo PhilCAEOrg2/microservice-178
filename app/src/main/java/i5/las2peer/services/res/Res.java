@@ -89,7 +89,7 @@ public class Res extends RESTService {
    * 
    *
    * 
-   * @return Response 
+   * @return Response Description of node res from metadata editor.
    * 
    */
   @GET
@@ -97,7 +97,7 @@ public class Res extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "res")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Description of node res from metadata editor.")
   })
   @ApiOperation(value = "gettest", notes = " ")
   public Response gettest() {
@@ -116,7 +116,7 @@ public class Res extends RESTService {
     // res
     boolean res_condition = true;
     if(res_condition) {
-      JSONObject result = new JSONObject();
+      JSONObject result = new classes().new User().toJSON();
 
       
 
